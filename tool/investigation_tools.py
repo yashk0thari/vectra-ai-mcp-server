@@ -192,7 +192,7 @@ class InvestigationMCPTools:
 
         try:
             # Create the assignment
-            assignment = await self.client.delete_assignment(assignment_data)
+            assignment = await self.client.create_assignment(assignment_data)
             assignment_id = assignment.get("assignment").get("id")
             
             # Return assignment details
